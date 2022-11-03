@@ -13,21 +13,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Main {
-    private static class Pair<T1, T2> {
-        public T1 first;
-        public T2 second;
-
-        public Pair(T1 first, T2 second) {
-            this.first = first;
-            this.second = second;
-        }
-
-        @Override
-        public String toString() {
-            return "Pair(" + first.toString() + ", \n " + second.toString() +") \n";
-        }
-    }
-
     public static void main(String[] args) {
         BaseFactory blackFactory;
         BaseFactory whiteFactory;
@@ -46,6 +31,7 @@ public class Main {
         var test2 = TestFactory(whiteFactory, rand);
 
         System.out.println(test1);
+        System.out.println();
         System.out.println(test2);
     }
 
